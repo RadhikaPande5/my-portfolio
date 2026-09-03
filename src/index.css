@@ -1,29 +1,43 @@
-* {
+/* =========================================================
+   GLOBAL RESET & THEME
+========================================================= */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
+  /* Surfaces */
   --bg-primary: #070807;
   --bg-secondary: #0d0f0e;
   --bg-card: #111412;
   --bg-card-hover: #151916;
 
+  /* Typography */
   --text-primary: #f3f5f3;
   --text-secondary: #b7bdb8;
   --text-muted: #7f8881;
 
+  /* Accent */
   --accent: #7dff78;
   --accent-hover: #a0ff9b;
+  --accent-bg: rgba(125, 255, 120, 0.08);
+  --accent-border: rgba(125, 255, 120, 0.35);
   --accent-glow: rgba(125, 255, 120, 0.1);
 
+  /* Borders & effects */
   --border: #202521;
   --border-strong: #354038;
+  --danger: #e05a5a;
 
   --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.25);
   --shadow-lg: 0 25px 70px rgba(0, 0, 0, 0.35);
 
+  /* Shared motion */
   --transition: 0.25s ease;
 }
 
@@ -39,10 +53,13 @@
 
   --accent: #238b28;
   --accent-hover: #1c741f;
+  --accent-bg: rgba(35, 139, 40, 0.08);
+  --accent-border: rgba(35, 139, 40, 0.32);
   --accent-glow: rgba(35, 139, 40, 0.09);
 
   --border: #dce2dc;
   --border-strong: #c7d0c8;
+  --danger: #c83f3f;
 
   --shadow-md: 0 18px 45px rgba(20, 35, 22, 0.09);
   --shadow-lg: 0 25px 70px rgba(20, 35, 22, 0.12);
@@ -67,19 +84,37 @@ body {
     sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  transition: background-color var(--transition), color var(--transition);
+  text-rendering: optimizeLegibility;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
 }
 
 body,
 button,
 input,
-textarea {
-  font-family: inherit;
+textarea,
+select {
+  font: inherit;
 }
 
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  border: 0;
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+img {
+  display: block;
 }
 
 ::selection {
