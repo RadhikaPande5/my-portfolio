@@ -6,8 +6,7 @@ function About() {
           <p className="eyebrow">A little about me</p>
           <h2>Learning by building.</h2>
           <p>
-            I’m pursuing a B.Tech in Information Technology at IET DAVV,
-            Indore, and enjoy learning through hands-on projects, coding
+            I enjoy learning through hands-on projects, coding
             practice, hackathons and open-source work.
           </p>
         </div>
