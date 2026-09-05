@@ -6,3 +6,5 @@ This is my portfolio site, built from scratch with React and Vite while I was le
 
 Below is the live link:
 my-portfolio-m4rva2z5z-radhikapande5s-projects.vercel.app
+
+[![Live Demo](https://img.shields.io/badge/demo-online-green)](https://my-portfolio-m4rva2z5z-radhikapande5s-projects.vercel.app)
